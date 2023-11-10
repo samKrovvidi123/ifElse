@@ -1,0 +1,48 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar-main-container {
+    height: 100%;
+    background-color: white;
+
+    .top-bar-container {
+        display: flex;
+        justify-content: space-between;
+
+        .search-bar-container {
+            .search-bar {
+                margin-left: 3rem;
+                justify-content: center;
+                align-items: center;
+                input {
+                    border: transparent;
+                }
+            }
+        }
+
+        .top-bar-top-right-container {
+            .right-side-items-container {
+                .padded-item {
+                    padding-right: 1rem;
+                }
+
+                .profile-details-container {
+                    .profile-photo-container {
+                        img {
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.display-flex {
+    display: flex;
+}

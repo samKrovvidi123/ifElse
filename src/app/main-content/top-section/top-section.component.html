@@ -1,0 +1,8 @@
+<div class="top-section-main-container">
+    <div class="card-container">
+        <div class = "card-component-container"*ngFor="let card of topCardsArray">
+            <app-card [header]="card.header" [value]="card.value" [subHeader]="card.sub_header">
+            </app-card>
+        </div>
+    </div>
+</div>
