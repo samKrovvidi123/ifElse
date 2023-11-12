@@ -12,13 +12,14 @@ html {
         .top-bar-component-container {
             display: flex;
             align-items: center;
+            height: 3rem;
 
             .ham-burger-icon {
                 // margin-right: 10px;
                 background-color: blue;
                 height: 30px;
                 display: flex;
-                width: 28px;
+                width: 3rem;
                 justify-content: center;
                 align-items: center;
 
@@ -30,6 +31,7 @@ html {
         }
 
         .body-container {
+            height: calc(100% - 3rem);
             display: flex;
 
             .side-bar-component-container {

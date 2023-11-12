@@ -21,9 +21,12 @@
                     <!-- <td>{{data.name}}</td> -->
                     <td>{{data.product}}</td>
                     <td>{{data.delivery_date}}</td>
-                    <td
-                        [ngClass]="{'paid': data.status === 'Paid','pending':data.status==='Pending','failed':data.status==='Failed'}">
-                        {{data.status}}
+                    <td>
+                        <span class="status-badge-container"
+                            [ngClass]="{'paid': data.status ===
+                            'Paid','pending':data.status==='Pending','failed':data.status==='Failed'}">
+                            {{data.status}} 
+                        </span>
                     </td>
                     <td>{{data.tracking_no}}</td>
                     <td>{{data.shipping}}</td>

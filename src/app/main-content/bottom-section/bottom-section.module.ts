@@ -4,6 +4,7 @@ import { SalesStatasticsComponent } from './sales-statastics/sales-statastics.co
 import { BalanceOverviewComponent } from './balance-overview/balance-overview.component';
 import { TopProductsComponent } from './top-products/top-products.component';
 import { BottomSectionComponent } from './bottom-section.component';
+import { FusionChartsModule } from 'angular-fusioncharts';
 
 
 
@@ -15,7 +16,8 @@ import { BottomSectionComponent } from './bottom-section.component';
     TopProductsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FusionChartsModule
   ],
   exports:[
     BottomSectionComponent

@@ -1,27 +1,42 @@
-.paid{
-    background-color:rgb(49,205,116)
-}
-.pending{
-    background-color: rgb(118,130,161)
-}
-.failed{
-    background-color: rgb(234,87,108);
+.status-badge-container {
+  border-radius: 0.2rem;
+  color: white;
+  padding: 0rem 0.3rem;
+
+  &.paid {
+    background-color: rgb(49, 205, 116)
+  }
+
+  &.pending {
+    background-color: rgb(118, 130, 161)
+  }
+
+  &.failed {
+    background-color: rgb(234, 87, 108);
+  }
 }
 
 .recent-orders-grid-container table {
-  width: 100%; /* Make the table fill its container */
-  border-collapse: collapse; /* Merge cell borders */
+  width: 100%;
+  /* Make the table fill its container */
+  border-collapse: collapse;
+  /* Merge cell borders */
 }
 
-.recent-orders-grid-container th, .recent-orders-grid-container td {
-  text-align: center; /* Text alignment */
-  padding: 8px; /* Padding inside cells */
-//   border: 1px solid #ddd; /* Border for table cells */
-  width: calc(100% / 7); /* Divide the width equally among the columns */
+.recent-orders-grid-container th,
+.recent-orders-grid-container td {
+  text-align: center;
+  /* Text alignment */
+  padding: 8px;
+  /* Padding inside cells */
+  //   border: 1px solid #ddd; /* Border for table cells */
+  width: calc(100% / 7);
+  /* Divide the width equally among the columns */
 }
 
 .recent-orders-grid-container th {
-  background-color: #f2f2f2; /* Background color for header cells */
+  background-color: #f2f2f2;
+  /* Background color for header cells */
 }
 
 // .recent-orders-grid-container tr:nth-child(even) {
