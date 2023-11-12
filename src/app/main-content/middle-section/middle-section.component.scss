@@ -1,0 +1,30 @@
+.middle-section-main-container {
+    width: 100%;
+    display: flex;
+
+    .middle-section-left-side-container {
+        width: 70%;
+        flex-direction: row;
+        max-height: 15rem;
+        overflow-x: auto;
+        overflow: auto;
+        background-color: rgb(237, 242, 243);
+        border: 1px solid #ccc;
+        margin: 2rem 2rem 2rem 1rem;
+        /* Optional: Add border for clarity */
+    }
+    
+    .middle-section-right-side-container {
+        width: 30%;
+        flex-direction: row;
+        max-height: 15rem;
+        background-color: rgb(255, 239, 239);
+        overflow-x: hidden;
+        margin: 2rem 2rem 2rem 1rem;
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+}

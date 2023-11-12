@@ -1,0 +1,32 @@
+.new-user-card-main-container {
+    min-height: 3rem;
+    display: flex;
+    margin: 1rem;
+
+    .car-container {
+        display: flex;
+
+        .photo-container {
+            margin-right: 1rem;
+        }
+
+        .name-and-country-details-container {
+            margin-right: 3rem;
+            min-width: 8rem;
+
+            .name-container {
+                margin-right: 1rem;
+            }
+
+            .country-container {}
+        }
+
+        .status-bar-container {
+            margin-right: 1rem;
+        }
+
+        .more-button-container {
+            margin-left: 1rem;
+        }
+    }
+}

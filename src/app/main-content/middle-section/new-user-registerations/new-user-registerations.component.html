@@ -1,0 +1,6 @@
+<div class="new-user-registeration-main-container">
+    <div class="new-user-card-component-container" *ngFor="let data of tableDataArray">
+        <app-new-user-card [imgSrc]="data.picture" [userName]="data.name" [userCountry]="data.country"
+            [statusCount]="data.progress"></app-new-user-card>
+    </div>
+</div>

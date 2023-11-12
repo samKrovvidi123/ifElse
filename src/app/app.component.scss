@@ -28,13 +28,37 @@ html {
                 width: 100%;
             }
         }
+
+        .body-container {
+            display: flex;
+
+            .side-bar-component-container {
+                width: 3rem;
+            }
+
+            .content-container {
+                width: calc(100% - 3rem);
+                display: flex;
+                flex-direction: column;
+              
+                .top-section-container {
+                  width: 100%;
+                //   display: block;
+                }
+              
+                .middle-section-container {
+                //   display: block;
+                }
+              }
+              
+        }
     }
 
     .content-container {
-        background-color: blue;
+        // background-color: blue;
 
         .top-section-container {
-            background-color: red;
+            // background-color: red;
         }
     }
 }

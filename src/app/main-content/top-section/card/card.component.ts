@@ -20,6 +20,8 @@ export class CardComponent {
   @Input()
   subHeader: string = '';
 
+  @Input()
+  icon:string = ''
   constructor(
     public apiService: ApiService,
     public http: HttpClient

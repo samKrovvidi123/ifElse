@@ -1,0 +1,34 @@
+<div class="recent-orders-main-container">
+    Recent Order
+    <div class="recent-orders-grid-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Customer</th>
+                    <th>Products</th>
+                    <th>Delivery date</th>
+                    <th>Status</th>
+                    <th>Tracking no#</th>
+                    <th>Shipping</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of tableDataArray; index as i">
+                    <td>{{i+1}}</td>
+                    <td>{{data.name}}</td>
+                    <!-- <td>{{data.name}}</td> -->
+                    <td>{{data.product}}</td>
+                    <td>{{data.delivery_date}}</td>
+                    <td
+                        [ngClass]="{'paid': data.status === 'Paid','pending':data.status==='Pending','failed':data.status==='Failed'}">
+                        {{data.status}}
+                    </td>
+                    <td>{{data.tracking_no}}</td>
+                    <td>{{data.shipping}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
